@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/GoPlugin/Plugin/core/logger"
-	"github.com/GoPlugin/external-initiator/integration/mock-client/grpc"
-	"github.com/GoPlugin/external-initiator/integration/mock-client/web"
+	"github.com/smartcontractkit/chainlink/core/logger"
+	"github.com/smartcontractkit/external-initiator/integration/mock-client/grpc"
+	"github.com/smartcontractkit/external-initiator/integration/mock-client/web"
 	"go.uber.org/zap/zapcore"
 )
 

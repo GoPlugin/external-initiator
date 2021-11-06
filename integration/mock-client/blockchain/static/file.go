@@ -7,7 +7,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/GoPlugin/Plugin/core/logger"
+	"github.com/smartcontractkit/chainlink/core/logger"
 )
 
 func Get(platform string) ([]byte, error) {

@@ -11,9 +11,9 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/GoPlugin/Plugin/core/logger"
-	"github.com/GoPlugin/external-initiator/store"
-	"github.com/GoPlugin/external-initiator/subscriber"
+	"github.com/smartcontractkit/chainlink/core/logger"
+	"github.com/smartcontractkit/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/subscriber"
 )
 
 const Xinfin = "xinfin"

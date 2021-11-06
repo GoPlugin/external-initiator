@@ -3,7 +3,7 @@ package migration1576509489
 import (
 	"github.com/jinzhu/gorm"
 	"github.com/pkg/errors"
-	"github.com/GoPlugin/external-initiator/store/migrations/migration0"
+	"github.com/smartcontractkit/external-initiator/store/migrations/migration0"
 )
 
 type TezosSubscription struct {

@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/gorilla/websocket"
-	"github.com/GoPlugin/external-initiator/eitest"
+	"github.com/smartcontractkit/external-initiator/eitest"
 )
 
 var rpcMockUrl *url.URL

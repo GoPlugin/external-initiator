@@ -3,14 +3,14 @@ package migration1610281978
 import (
 	"github.com/jinzhu/gorm"
 	"github.com/pkg/errors"
-	"github.com/GoPlugin/external-initiator/store/migrations/migration0"
-	"github.com/GoPlugin/external-initiator/store/migrations/migration1576509489"
-	"github.com/GoPlugin/external-initiator/store/migrations/migration1576783801"
-	"github.com/GoPlugin/external-initiator/store/migrations/migration1587897988"
-	"github.com/GoPlugin/external-initiator/store/migrations/migration1592829052"
-	"github.com/GoPlugin/external-initiator/store/migrations/migration1594317706"
-	"github.com/GoPlugin/external-initiator/store/migrations/migration1599849837"
-	"github.com/GoPlugin/external-initiator/store/migrations/migration1608026935"
+	"github.com/smartcontractkit/external-initiator/store/migrations/migration0"
+	"github.com/smartcontractkit/external-initiator/store/migrations/migration1576509489"
+	"github.com/smartcontractkit/external-initiator/store/migrations/migration1576783801"
+	"github.com/smartcontractkit/external-initiator/store/migrations/migration1587897988"
+	"github.com/smartcontractkit/external-initiator/store/migrations/migration1592829052"
+	"github.com/smartcontractkit/external-initiator/store/migrations/migration1594317706"
+	"github.com/smartcontractkit/external-initiator/store/migrations/migration1599849837"
+	"github.com/smartcontractkit/external-initiator/store/migrations/migration1608026935"
 )
 
 type BSNIritaSubscription struct {

@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GoPlugin/external-initiator/blockchain"
-	"github.com/GoPlugin/external-initiator/plugin"
-	"github.com/GoPlugin/external-initiator/store"
-	"github.com/GoPlugin/external-initiator/subscriber"
+	"github.com/smartcontractkit/external-initiator/blockchain"
+	"github.com/smartcontractkit/external-initiator/chainlink"
+	"github.com/smartcontractkit/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/subscriber"
 	"github.com/stretchr/testify/require"
 )
 

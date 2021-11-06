@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/ontio/ontology-go-sdk/common"
-	"github.com/GoPlugin/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/store"
 	"github.com/stretchr/testify/assert"
 )
 

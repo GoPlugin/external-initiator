@@ -15,10 +15,10 @@ import (
 	tmjson "github.com/tendermint/tendermint/libs/json"
 	tmrpc "github.com/tendermint/tendermint/rpc/client/http"
 
-	"github.com/GoPlugin/Plugin/core/logger"
+	"github.com/smartcontractkit/chainlink/core/logger"
 	"github.com/smartcontractkit/chainlink/core/store/models"
-	"github.com/GoPlugin/external-initiator/store"
-	"github.com/GoPlugin/external-initiator/subscriber"
+	"github.com/smartcontractkit/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/subscriber"
 )
 
 const (

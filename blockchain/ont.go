@@ -8,10 +8,10 @@ import (
 	ontology_go_sdk "github.com/ontio/ontology-go-sdk"
 	"github.com/ontio/ontology-go-sdk/common"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/GoPlugin/Plugin/core/logger"
+	"github.com/smartcontractkit/chainlink/core/logger"
 	"github.com/smartcontractkit/chainlink/core/store/models"
-	"github.com/GoPlugin/external-initiator/store"
-	"github.com/GoPlugin/external-initiator/subscriber"
+	"github.com/smartcontractkit/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/subscriber"
 )
 
 const (

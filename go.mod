@@ -1,4 +1,4 @@
-module github.com/GoPlugin/external-initiator
+module github.com/smartcontractkit/external-initiator
 
 go 1.15
 
@@ -6,7 +6,7 @@ require (
 	github.com/Conflux-Chain/go-conflux-sdk v1.0.1
 	github.com/Depado/ginprom v1.2.1-0.20200115153638-53bbba851bd8
 	github.com/FactomProject/basen v0.0.0-20150613233007-fe3947df716e // indirect
-	github.com/GoPlugin/Plugin v0.0.3
+	github.com/GoPlugin/external-initiator v0.0.0-20211106104018-eec996a2b237
 	github.com/avast/retry-go v2.6.0+incompatible
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869
 	github.com/centrifuge/go-substrate-rpc-client v2.0.0+incompatible

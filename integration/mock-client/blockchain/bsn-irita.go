@@ -10,7 +10,7 @@ import (
 	tmjson "github.com/tendermint/tendermint/libs/json"
 	tmrpc "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 
-	"github.com/GoPlugin/Plugin/core/logger"
+	"github.com/smartcontractkit/chainlink/core/logger"
 )
 
 func setBSNIritaRoutes(router *gin.Engine) {

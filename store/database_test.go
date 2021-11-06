@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/smartcontractkit/chainlink/core/store/orm"
-	"github.com/GoPlugin/external-initiator/eitest"
+	"github.com/smartcontractkit/external-initiator/eitest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -3,7 +3,7 @@ package migration1582671289
 import (
 	"github.com/jinzhu/gorm"
 	"github.com/pkg/errors"
-	"github.com/GoPlugin/external-initiator/store/migrations/migration1576783801"
+	"github.com/smartcontractkit/external-initiator/store/migrations/migration1576783801"
 )
 
 func Migrate(tx *gorm.DB) error {

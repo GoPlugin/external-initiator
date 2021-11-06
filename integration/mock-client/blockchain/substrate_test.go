@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/GoPlugin/external-initiator/blockchain"
+	"github.com/smartcontractkit/external-initiator/blockchain"
 )
 
 const expectedStorageKey = "0x26aa394eea5630e07c48ae0c9558cef780d41e5e16056765bc8461851072c9d7"

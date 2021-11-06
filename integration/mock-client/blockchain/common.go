@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-	"github.com/GoPlugin/external-initiator/blockchain"
+	"github.com/smartcontractkit/external-initiator/blockchain"
 )
 
 // JsonrpcMessage declares JSON-RPC message type

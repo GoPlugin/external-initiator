@@ -3,8 +3,8 @@ package blockchain
 import (
 	"encoding/json"
 
-	"github.com/GoPlugin/Plugin/core/logger"
-	"github.com/GoPlugin/external-initiator/integration/mock-client/blockchain/static"
+	"github.com/smartcontractkit/chainlink/core/logger"
+	"github.com/smartcontractkit/external-initiator/integration/mock-client/blockchain/static"
 )
 
 type CannedResponses map[string][]JsonrpcMessage

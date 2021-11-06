@@ -6,8 +6,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/magiconair/properties/assert"
-	"github.com/GoPlugin/external-initiator/store"
-	"github.com/GoPlugin/external-initiator/subscriber"
+	"github.com/smartcontractkit/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/subscriber"
 	"github.com/stretchr/testify/require"
 )
 

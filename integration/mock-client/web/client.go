@@ -11,8 +11,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
-	"github.com/GoPlugin/Plugin/core/logger"
-	"github.com/GoPlugin/external-initiator/integration/mock-client/blockchain"
+	"github.com/smartcontractkit/chainlink/core/logger"
+	"github.com/smartcontractkit/external-initiator/integration/mock-client/blockchain"
 )
 
 // RunWebserver starts a new web server using the access key

@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/centrifuge/go-substrate-rpc-client/types"
-	"github.com/GoPlugin/external-initiator/store"
-	"github.com/GoPlugin/external-initiator/subscriber"
+	"github.com/smartcontractkit/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/subscriber"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

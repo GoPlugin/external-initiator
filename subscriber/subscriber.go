@@ -3,7 +3,7 @@
 // subscribes to.
 package subscriber
 
-import "github.com/GoPlugin/external-initiator/store"
+import "github.com/smartcontractkit/external-initiator/store"
 
 // Type holds the connection type for the subscription
 type Type int

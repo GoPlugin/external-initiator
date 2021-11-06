@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/GoPlugin/Plugin/core/logger"
-	"github.com/GoPlugin/external-initiator/client"
+	"github.com/smartcontractkit/chainlink/core/logger"
+	"github.com/smartcontractkit/external-initiator/client"
 	"go.uber.org/zap/zapcore"
 )
 

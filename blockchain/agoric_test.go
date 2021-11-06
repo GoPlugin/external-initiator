@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/GoPlugin/external-initiator/store"
-	"github.com/GoPlugin/external-initiator/subscriber"
+	"github.com/smartcontractkit/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/subscriber"
 )
 
 func TestCreateAgoricFilterMessage(t *testing.T) {

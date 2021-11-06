@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/GoPlugin/external-initiator/blockchain"
+	"github.com/smartcontractkit/external-initiator/blockchain"
 )
 
 func TestNEARMock_status(t *testing.T) {

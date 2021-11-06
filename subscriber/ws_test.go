@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/gorilla/websocket"
-	"github.com/GoPlugin/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/store"
 )
 
 var upgrader = websocket.Upgrader{} // use default options

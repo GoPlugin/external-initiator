@@ -4,8 +4,8 @@ import (
 	"net"
 
 	"github.com/iotexproject/iotex-proto/golang/iotexapi"
-	"github.com/GoPlugin/Plugin/core/logger"
-	"github.com/GoPlugin/external-initiator/integration/mock-client/blockchain"
+	"github.com/smartcontractkit/chainlink/core/logger"
+	"github.com/smartcontractkit/external-initiator/integration/mock-client/blockchain"
 	"google.golang.org/grpc"
 )
 

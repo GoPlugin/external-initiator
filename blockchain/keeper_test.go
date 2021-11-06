@@ -10,7 +10,7 @@ import (
 	"github.com/bmizerany/assert"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/GoPlugin/external-initiator/subscriber"
+	"github.com/smartcontractkit/external-initiator/subscriber"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/GoPlugin/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/store"
 )
 
 func TestCreateBSNIritaSubscriber(t *testing.T) {

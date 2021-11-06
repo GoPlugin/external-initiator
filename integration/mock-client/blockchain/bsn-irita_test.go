@@ -8,7 +8,7 @@ import (
 	tmjson "github.com/tendermint/tendermint/libs/json"
 	tmrpc "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/GoPlugin/external-initiator/blockchain"
+	"github.com/smartcontractkit/external-initiator/blockchain"
 )
 
 func TestHandleQueryStatus(t *testing.T) {

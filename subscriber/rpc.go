@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/GoPlugin/Plugin/core/logger"
-	"github.com/GoPlugin/external-initiator/store"
+	"github.com/smartcontractkit/chainlink/core/logger"
+	"github.com/smartcontractkit/external-initiator/store"
 )
 
 // RpcSubscriber holds the configuration for

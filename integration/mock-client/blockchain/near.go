@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/GoPlugin/external-initiator/blockchain"
+	"github.com/smartcontractkit/external-initiator/blockchain"
 )
 
 func handleNEARRequest(conn string, msg JsonrpcMessage) ([]JsonrpcMessage, error) {

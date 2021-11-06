@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GoPlugin/external-initiator/store"
+	"github.com/smartcontractkit/external-initiator/store"
 )
 
 func TestRpcSubscriber_SubscribeToEvents(t *testing.T) {

@@ -201,9 +201,7 @@ func (k xinfinManager) ParseResponse(data []byte) ([]subscriber.Event, bool) {
 		var rawEvents []models.Log
 
 		actualValue := string(msg.Result[:])
-		fmt.Print("actual value",actualValue)
 		modifiedValue := strings.Replace(actualValue,"xdc","0x",1)
-		fmt.Print("modifiedValue value",modifiedValue)
 		toSendData := []byte(modifiedValue)
 
 		if err := json.Unmarshal(toSendData, &rawEvents); err != nil {

@@ -46,7 +46,8 @@ func (rpc rpcSubscription) Unsubscribe() {
 
 func (rpc rpcSubscription) poll() {
 	logger.Debugf("Polling %s\n", rpc.endpoint)
-
+	logger.Info("i am here", rpc.endpoint)
+	time.Sleep(2 * time.Second)
 	resp, err := sendPostRequest(rpc.endpoint, rpc.manager.GetTriggerJson())
 	if err != nil {
 		logger.Errorf("Failed polling %s: %v\n", rpc.endpoint, err)
@@ -66,7 +67,7 @@ func (rpc rpcSubscription) poll() {
 func (rpc rpcSubscription) readMessages(interval time.Duration) {
 	timer := time.NewTicker(interval)
 	defer timer.Stop()
-
+	time.Sleep(1 * time.Second)
 	// Poll before waiting for ticker
 	rpc.poll()
 
@@ -75,12 +76,15 @@ func (rpc rpcSubscription) readMessages(interval time.Duration) {
 		case <-rpc.done:
 			return
 		case <-timer.C:
+			//Added
+			time.Sleep(2 * time.Second)
 			rpc.poll()
 		}
 	}
 }
 
 func sendPostRequest(url string, body []byte) ([]byte, error) {
+	time.Sleep(2 * time.Second)
 	request, err := http.NewRequest(http.MethodPost, url, bytes.NewReader(body))
 	if err != nil {
 		return nil, err
@@ -114,7 +118,7 @@ func (rpc RpcSubscriber) SubscribeToEvents(channel chan<- Event, _ store.Runtime
 
 	interval := rpc.Interval
 	if interval <= time.Duration(0) {
-		interval = 5 * time.Second
+		interval = 15 * time.Second
 	}
 
 	go subscription.readMessages(interval)

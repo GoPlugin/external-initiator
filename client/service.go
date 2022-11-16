@@ -251,7 +251,7 @@ func (srv *Service) subscribe(sub *store.Subscription, iSubscriber subscriber.IS
 
 		// Add a second of delay to let services (Chainlink core)
 		// sync up before sending the first job run trigger.
-		time.Sleep(1 * time.Second)
+		time.Sleep(3 * time.Second)
 
 		for {
 			event, ok := <-as.Events

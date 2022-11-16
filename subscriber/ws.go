@@ -46,7 +46,7 @@ func (wss WebsocketSubscriber) Test() error {
 	}
 
 	// Set timeout for response to 5 seconds
-	t := time.NewTimer(5 * time.Second)
+	t := time.NewTimer(10 * time.Second)
 	defer t.Stop()
 
 	select {
@@ -128,8 +128,8 @@ func (wss websocketSubscription) init() {
 }
 
 func (wss websocketSubscription) reconnect() {
-	logger.Warnf("Lost WS connection to %s\nRetrying in %vs", wss.endpoint, 3)
-	time.Sleep(3 * time.Second)
+	logger.Warnf("Lost WS connection to %s\nRetrying in %vs", wss.endpoint, 5)
+	time.Sleep(5 * time.Second)
 
 	c, _, err := websocket.DefaultDialer.Dial(wss.endpoint, nil)
 	if err != nil {

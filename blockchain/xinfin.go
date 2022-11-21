@@ -211,7 +211,6 @@ func (k xinfinManager) ParseResponse(data []byte) ([]subscriber.Event, bool) {
 
 		for _, evt := range rawEvents {
 			request, err := logEventToOracleRequest(evt)
-			fmt.Print("requestrequest",request,evt.Data,evt.Address)
 			if err != nil {
 				logger.Error("failed to get oracle request:", err, evt.Data, evt.Address)
 				return nil, false

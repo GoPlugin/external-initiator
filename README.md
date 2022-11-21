@@ -1,6 +1,6 @@
 # External Initiator
 
-Initiate Chainlink job runs from external sources.
+Initiate Plugin job runs from external sources.
 
 ## Installation
 
@@ -119,3 +119,10 @@ been stopped. You can manually stop them by running the stop script:
 ```bash
 ./integration/stop_docker
 ```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Inspiration & forked from
+
+https://github.com/smartcontractkit/external-initiator 

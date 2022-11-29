@@ -4,10 +4,8 @@ import (
 	"encoding/json"
 	"math/big"
 	"strings"
-	"fmt"
 
 	"github.com/smartcontractkit/chainlink/core/store/models"
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/prometheus/client_golang/prometheus"
 
@@ -29,31 +27,42 @@ type xinfinManager struct {
 
 // createXinfinManager creates a new instance of xinfinManager with the provided
 // connection type and store.EthSubscription config.
+// func createXinfinManager(p subscriber.Type, config store.Subscription) xinfinManager {
+
+// 	var addresses []common.Address
+// 	for _, a := range config.Xinfin.Addresses {
+// 		b := strings.Replace(a,"xdc","0x",1)
+// 		addresses = append(addresses, common.HexToAddress(b))
+
+// 	}
+
+// 	var topics [][]common.Hash
+// 	var t []common.Hash
+// 	for _, value := range config.Xinfin.Topics {
+// 		if len(value) < 1 {
+// 			continue
+// 		}
+// 		t = append(t, common.HexToHash(value))
+// 	}
+// 	topics = append(topics, t)
+
+// 	return xinfinManager{
+// 		ethManager{
+// 			fq: &filterQuery{
+// 				Addresses: addresses,
+// 				Topics:    topics,
+// 			},
+// 			p:            p,
+// 			endpointName: config.EndpointName,
+// 			jobid:        config.Job,
+// 		},
+// 	}
+// }
+
 func createXinfinManager(p subscriber.Type, config store.Subscription) xinfinManager {
-
-	var addresses []common.Address
-	for _, a := range config.Xinfin.Addresses {
-		b := strings.Replace(a,"xdc","0x",1)
-		addresses = append(addresses, common.HexToAddress(b))
-
-	}
-
-	var topics [][]common.Hash
-	var t []common.Hash
-	for _, value := range config.Xinfin.Topics {
-		if len(value) < 1 {
-			continue
-		}
-		t = append(t, common.HexToHash(value))
-	}
-	topics = append(topics, t)
-
 	return xinfinManager{
 		ethManager{
-			fq: &filterQuery{
-				Addresses: addresses,
-				Topics:    topics,
-			},
+			fq:           createEvmFilterQuery(config.Job, config.Xinfin.Addresses),
 			p:            p,
 			endpointName: config.EndpointName,
 			jobid:        config.Job,
